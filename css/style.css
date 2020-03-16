@@ -11,11 +11,12 @@
     display: flex;
     flex-direction: column;
 }
-.infoevento {
-    display: none;
-}
 .imgevento {
     height: 300px;
     width: 300px;
     background-image: url(../img/banner1.jpg);
+}
+
+@media screen and (min-width: 425px){
+    
 }
