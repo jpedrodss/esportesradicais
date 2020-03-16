@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.topmobile nav {
+    display: flex;
+    flex-direction: column;
+}
+.infoevento {
+    display: none;
+}
+.imgevento {
+    height: 300px;
+    width: 300px;
+    background-image: url(../img/banner1.jpg);
+}

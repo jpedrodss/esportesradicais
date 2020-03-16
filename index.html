@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportes Radicais</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="topmobile">
+                <h1>Esportes Radicais</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Planos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h3>Texto Decorativo</h3>
+        </div>
+        <div class="sobre">
+            <h3>Sobre</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolore quis eius illo molestiae est cumque fuga, at neque. Numquam molestiae alias rerum nulla! Qui repellat minus ex est saepe.</p>
+        </div>
+        <div class="descritivo">
+            <div class="imgsobre">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo exercitationem ipsam accusantium optio officia reiciendis ratione distinctio alias, dolores quibusdam deleniti sed corporis labore quam vitae porro aspernatur animi.</p>
+            </div>
+        </div>
+        <div class="banner2">
+            <h3>Texto Decorativo</h3>
+        </div>
+        <div class="eventos">
+        <h2>Eventos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis corporis, aut sed ipsa repellendus distinctio.</p>
+        </div>
+        <div class="evento">
+                <div class="infoevento">
+                    <div class="imgevento">
+                        <h4>Texto Decorativo</h4>
+                    </div>
+                        <div>
+                        <h5>Informações do Evento</h5>
+                        <ul>
+                            <li>Requisitos:</li>
+                            <li>Níveaadasdal:</li>
+                            <li>Qual Evento vai Acontecer:</li>
+                            <li>Responsável pelo Evento:</li>
+                            <li>Atrações Confirmadas:</li>
+                        </ul>
+                        </div>
+                    </div>
+                <div>
+                    <div class="imgevento">
+                        <h4>Texto Decorativo</h4>
+                    </div>
+                        <div>
+                        <h5>Informações do Evento</h5>
+                        <ul>
+                            <li>Requisitos:</li>
+                            <li>Nível:</li>
+                            <li>Qual Evento vai Acontecer:</li>
+                            <li>Responsável pelo Evento:</li>
+                            <li>Atrações Confirmadas:</li>
+                        </ul>
+                        </div>
+                </div>
+                <div>
+                    <div class="imgevento">
+                        <h4>Texto Decorativo</h4>
+                    </div>
+                        <div>
+                        <h5>Informações do Evento</h5>
+                        <ul>
+                            <li>Requisitos:</li>
+                            <li>Nível:</li>
+                            <li>Qual Evento vai Acontecer:</li>
+                            <li>Responsável pelo Evento:</li>
+                            <li>Atrações Confirmadas:</li>
+                        </ul>
+                        </div>
+                </div>
+            <h5>Ver todos</h5>
+        <div class="prevnext">
+            <button onclick="plusDivs(1)">&#10094;Proximo</button>
+            <button onclick="plusDivs(-1)">&#10095;Anterior</button>
+        </div>
+        <div class="contato">
+            <h2>Contato</h2>
+        </div>
+        <div class="entrecontato">
+            <h3>Entre em Contato</h3>
+        </div>
+    </main>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+</html>
