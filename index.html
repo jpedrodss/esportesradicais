@@ -14,12 +14,16 @@
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
+                        <li>-</li>
                         <li><a href="#">Sobre</a></li>
+                        <li>-</li>
                         <li><a href="#">Planos</a></li>
+                        <li>-</li>
                         <li><a href="#">Contato</a></li>
                     </ul>
                     <ul>
                         <li><a href="#">Cadastro</a></li>
+                        <li>-</li>
                         <li><a href="#">Login</a></li>
                     </ul>
                 </nav>
@@ -30,23 +34,32 @@
         <div class="banner">
             <h3>Texto Decorativo</h3>
         </div>
-        <div class="sobre">
+        <div class="sobre container">
             <h3>Sobre</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolore quis eius illo molestiae est cumque fuga, at neque. Numquam molestiae alias rerum nulla! Qui repellat minus ex est saepe.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="descritivo">
-            <div class="imgsobre">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo exercitationem ipsam accusantium optio officia reiciendis ratione distinctio alias, dolores quibusdam deleniti sed corporis labore quam vitae porro aspernatur animi.</p>
+        <div class="descritivo container">
+            <div>
+            <div class="imgsobre"><img src="/img/003-motorcycle.svg" alt="Imagem Ilustrativa Esporte Radical"></div>
+            <h3>Lorem ipsum</h3>
             </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="descritivo container">
+            <div>
+            <div class="imgsobre"><img src="img/002-ski.svg" alt="Imagem Ilustrativa Esporte Radical"></div>
+            <h3>Lorem ipsum</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="banner2">
             <h3>Texto Decorativo</h3>
         </div>
         <div class="eventos">
-        <h2>Eventos</h2>
+        <h3>Eventos</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos omnis corporis, aut sed ipsa repellendus distinctio.</p>
         </div>
-        <div class="evento">
+        <div class="evento container">
                 <div class="infoevento">
                     <div class="imgevento">
                         <h4>Texto Decorativo</h4>
@@ -55,38 +68,77 @@
                         <h5>Informações do Evento</h5>
                         <ul>
                             <li>Requisitos:</li>
-                            <li>Níveaadasdal:</li>
+                            <li>Nível:</li>
                             <li>Qual Evento vai Acontecer:</li>
                             <li>Responsável pelo Evento:</li>
                             <li>Atrações Confirmadas:</li>
                         </ul>
                         </div>
                     </div>
-            <h5>Ver todos</h5>
+                <a href="#">Ver Todos</a>
+        </div>
+        <div class="banner3">
+            <h3>Contato</h3>
         </div>
         <div class="contato">
-            <h2>Contato</h2>
-        </div>
-        <div class="entrecontato">
             <h3>Entre em Contato</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="formularios">
+        <div class="forms container">
             <form action="contato" method="post">
                 <div class="campo">
-                    <label for="nome"></label>
-                    <input type="text" name="nome" id="nome">
+                    <label for="nome" id="nome"></label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
                 </div>
                 <div class="campo">
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email">
+                    <label for="email" id="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
                 <div class="campo">
-                    <label for="mensagem"></label>
-                    
+                    <label for="mensagem" id="msg"></label>
+                    <textarea name="mensagem" id="msg" cols="30" rows="10" placeholder="Mensagem"></textarea>
                 </div>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </main>
+    <footer>
+        <div class="outra">
+            <div class="outras">
+                <h4>Outras</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Licença</a></li>
+                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="#">Colaboradores</a></li>
+                </ul>
+            </div>
+            <div class="outras">
+                <h4>Outras</h4>
+                <ul>
+                    <li><a href="#">Contratos e Serviços</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Eventos</a></li>
+                </ul>
+            </div>
+            <div class="outras">
+                <h4>Outras</h4>
+                <ul>
+                    <li><a href="#">Junte-se a Nós</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Premiados</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sociais container">
+            <a href="#"><img src="img/001-facebook.svg" alt="Link para Facebook do Site"></a>
+            <a href="#"><img src="img/002-instagram.svg" alt="Link para Instagram do Site"></a>
+            <a href="#"><img src="img/003-twitter.svg" alt="Link para Twitter do Site"></a>
+        </div>
+        <p>Todos os Direitos Reservados</p>
+    </footer>
 </body>
 </html>
