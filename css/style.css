@@ -9,13 +9,153 @@
     width: 90%;
     margin: 0 auto;
 }
+header {
+    width: 100%;
+    max-height: 160px;
+    background: #000;
+    height: 160px;
+    padding-top: 2em;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
 .topmobile nav {
+    width: 100%;
+    background-color: #000;
     display: flex;
     flex-direction: column;
+}
+.topmobile a {
+    color: white;
+    padding: .5em 1em;
+}
+.topmobile li {
+    color: white;
+    padding: .5em 0em;
+}
+.topmobile ul {
+    display: flex;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.banner, .banner2, .banner3 {
+    background-image: url(../img/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner2 {
+    background-image: url(../img/banner2.jpg);
+    margin: 1.5em 0;
+}
+.banner3 {
+    background-image: url(../img/banner3.jpg);
+    margin: 1.5em 0;
+}
+.banner h3, .banner2 h3, .banner3 h3 {
+    background-color: rgba(27, 27, 27, .3);
+    padding: .7em 1em;
+}
+.sobre h3, .eventos h3, .contato h3 {
+    width: 90px;
+    padding-bottom: .8em;
+    margin-bottom: .8em;
+    border-bottom: 1px solid #272727;
+}
+.sobre, .eventos, .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.contato {
+    margin: 1em 0;
+}
+.contato h3 {
+    width: auto;
+    padding: 0 .8em 0 .8em;
+    padding-bottom: .8em;
+}
+.descritivo {
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.descritivo h3 {
+    font-weight: lighter;
+}
+.descritivo p {
+    padding: 0 1em;
+    font-size: .9em;
+    width: 60%;
+}
+.descritivo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgsobre img {
+    width: 60px;
+    height: 60px;
+    padding-bottom: .2em;
+}
+.infoevento {
+    height: 500px;
+}
+.infoevento h5 {
+    font-weight: lighter;
+    font-size: 1.4em;
+    padding: .3em 0;
+    text-align: center;
+}
+.infoevento li{
+    padding: .3em 0;
+}
+.imgevento {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.imgevento h4 {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: .8em;
+    text-align: center;
+    color: white;
+    background-color: rgba(27, 27, 27, .3);
+}
+.evento {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.evento a {
+    margin-top: 2em;
+    padding: .4em 2.5em;
+    color: #000;
+    border: solid 1px #000;
 }
 .imgevento {
     height: 300px;
     width: 300px;
+<<<<<<< HEAD
     background-image: url(../img/banner1.jpg);
 }
 /*mobile cadastro*/
@@ -104,4 +244,66 @@ a {
 .campo{
     display: flex;
     margin: 20px 10px;
+=======
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.forms input {
+    margin: .2em auto;
+}
+.forms input, textarea {
+    width: 300px;
+    padding: .2em;
+}
+.forms button {
+    padding: .5em 2em;
+    background-color: #fff;
+    border: 1px solid #272727;
+}
+.outra {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #157DEB;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding: 2em 0;
+}
+.outras li {
+    padding: .5em 0;
+}
+.outras li a, .outras h4 {
+    color: white;
+    font-size: .9em;
+    padding: .5em;
+}
+.outras h4 {
+    color: #000;
+}
+.sociais img {
+    width: 50px;
+    padding: 0 1em;
+}
+.sociais {
+    background-color: #157DEB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+footer p {
+    padding: .5em;
+    text-align: center;
+    background: linear-gradient(#3D01FF, #157DEB);
+>>>>>>> a6b30db3edb56e4cdc2e9b331846846d4437455e
 }
