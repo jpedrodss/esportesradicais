@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
     max-width: 1200px;
@@ -17,36 +19,38 @@
     background-image: url(../img/banner1.jpg);
 }
 /*mobile cadastro*/
-.cabecalho{
-    background-color: black;
-    height: 161px;
+header {
+    width: 100%;
+    max-height: 160px;
+    background: #000;
+    height: 160px;
+    padding-top: 2em;
 }
-.topmobile{
-    background-color: black;
-}
-header a{
+h1 {
     color: white;
-    background-color: black;
+    text-align: center;
+    font-weight: lighter;
+}
+.topmobile nav {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.topmobile a {
+    color: white;
+    padding: .5em 1em;
+}
+.topmobile li {
+    color: white;
+    padding: .5em 0em;
+}
+.topmobile ul {
+    display: flex;
+    margin: 0 auto;
+}
+a {
     text-decoration: none;
-}
-header li{
-    list-style: none;
-    margin: 18px;
-}
-.topmobile h1{
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-.inicio{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-.inicio2{
-    display: flex;
-    justify-content: center;
-
 }
 .banner2{
     width: 100px;
@@ -55,16 +59,20 @@ header li{
 .botao{
     color: white;
     text-decoration: none;
-    padding: 20px 12px;
+    padding: 15px 12px;
     width: 15em;
-    height: 20px;
+   display: flex;
+   justify-content: center;
+    height: 50px;
     border-radius: 20px;
     border: black;
     box-shadow: 0px 6px 10px black;
 }
 .cadastroadm{
-    margin-top: 12em;
+    margin-top: 11em;
     display: flex;
+    width: 23em;
+    margin: 10em 20px;
 }
 .cadastroadm h2{
     font-size: 20px;
@@ -72,5 +80,28 @@ header li{
     background-color:white;
     color: black;
     width: 700px;
-    margin: 0 auto;
+    margin: -42px auto;
+}
+.form_adm{
+    height: 400gipx;
+    margin: 0 10px;
+    background-color: #84ADFF;
+}
+.form_adm .campo{
+    display: flex;
+    justify-content: center;
+}
+.esporte{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.data{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.campo{
+    display: flex;
+    margin: 20px 10px;
 }

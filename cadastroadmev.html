@@ -10,45 +10,81 @@
 
 <body>
     <header>
-        <div class="cabecalho">
-            <div class="container">
-                <div class="topmobile">
-                    <h1>Esportes Radicais</h1>
-                    <nav>
-                        <ul class="inicio">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Planos</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                        <ul class="inicio2">
-                            <li><a href="#">Cadastro</a></li>
-                            <li><a href="#">Login</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="banner2">
-                <img src="img/cadastroevento-mobile.png" alt="Imagem de um homem praticando o paraquedismo">
+        <div class="container">
+            <div class="topmobile">
+                <h1>Esportes Radicais</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>-</li>
+                        <li><a href="#">Sobre</a></li>
+                        <li>-</li>
+                        <li><a href="#">Planos</a></li>
+                        <li>-</li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li>-</li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+
     <main>
+        <div class="banner2">
+                <img src="img/cadastroevento-mobile.png" alt="Imagem de um homem praticando o paraquedismo">
+            </div>
         <div>
             <div class="cadastroadm">
-            <h2 class="botao">Cadastro de Administrador de Eventos</h2>
+                <h2 class="botao">Cadastro de Administrador de Eventos</h2>
             </div>
         </div>
         <div class="container">
-            <section class="adm_form">
-                <nav>
-                    <ul>
-                        li
-                    </ul>
+            <div>
+                <form class="form_adm" action="" method="post">
+                    <!--Formulario-->
+                    <div class="campo">
+                        <label for="nome"></label>
+                        <input type="text" name="nomecompletodousuario" id="nome" placeholder="Nome Completo">
+                    </div>
+                    <div class="campo">
+                        <div class="data">
+                            <label for="nascimento">Data de Nascimento:</label>
+                            <input type="date" name="nascimento" id="nascimento" max="2020-03-16">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone"></label>
+                        <input type="telephone" name="telefone" id="telefone" placeholder="Número de Telefone">
+                    </div>
+                    <div class="campo">
+                        <label for="endereço"></label>
+                        <input type="text" name="endereço" id="endereço" placeholder="Endereço">
+                    </div>
+                    <div class="campo">
+                        <div class="esporte">
+                            <label for="esportes">Qual Esporte se proficionalizou</label>
+                            <select name="esportes" id="esportes">
+                                <option value="selecione">Selecione Aqui</option>
+                                <option value="skate">Skate</option>
+                                <option value="basquete">Basquete</option>
+                                <option value="natação">Natação</option>
+                                <option value="parkour">Parkour</option>
+                                <option value="dança">Dança</option>
+                        </div>
+                        </select>
+                    </div>
+                </form>
                 </nav>
-            </section>
-        </div>
-        
+            </div>
+
     </main>
 
 </body>
