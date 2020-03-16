@@ -62,66 +62,31 @@
                         </ul>
                         </div>
                     </div>
-                <div>
-                    <div class="imgevento">
-                        <h4>Texto Decorativo</h4>
-                    </div>
-                        <div>
-                        <h5>Informações do Evento</h5>
-                        <ul>
-                            <li>Requisitos:</li>
-                            <li>Nível:</li>
-                            <li>Qual Evento vai Acontecer:</li>
-                            <li>Responsável pelo Evento:</li>
-                            <li>Atrações Confirmadas:</li>
-                        </ul>
-                        </div>
-                </div>
-                <div>
-                    <div class="imgevento">
-                        <h4>Texto Decorativo</h4>
-                    </div>
-                        <div>
-                        <h5>Informações do Evento</h5>
-                        <ul>
-                            <li>Requisitos:</li>
-                            <li>Nível:</li>
-                            <li>Qual Evento vai Acontecer:</li>
-                            <li>Responsável pelo Evento:</li>
-                            <li>Atrações Confirmadas:</li>
-                        </ul>
-                        </div>
-                </div>
             <h5>Ver todos</h5>
-        <div class="prevnext">
-            <button onclick="plusDivs(1)">&#10094;Proximo</button>
-            <button onclick="plusDivs(-1)">&#10095;Anterior</button>
         </div>
         <div class="contato">
             <h2>Contato</h2>
         </div>
         <div class="entrecontato">
             <h3>Entre em Contato</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="formularios">
+            <form action="contato" method="post">
+                <div class="campo">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="mensagem"></label>
+                    
+                </div>
+            </form>
         </div>
     </main>
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-    </script>
 </body>
 </html>
