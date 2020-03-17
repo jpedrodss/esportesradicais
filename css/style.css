@@ -15,14 +15,16 @@ header {
     background: #000;
     height: 160px;
     padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
 }
 h1 {
     color: white;
     text-align: center;
     font-weight: lighter;
+    font-size: 1.3em;
 }
 .topmobile nav {
-    width: 100%;
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -52,6 +54,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 10px rgba(27, 27, 27, .6);
 }
 .banner2 {
     background-image: url(../img/banner2.jpg);
@@ -91,9 +94,11 @@ a {
 }
 .descritivo {
     width: 80%;
-    height: 150px;
+    min-height: 150px;
+    height: 100%;
     text-align: center;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .descritivo h3 {
@@ -127,20 +132,6 @@ a {
 .infoevento li{
     padding: .3em 0;
 }
-.imgevento {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.imgevento h4 {
-    width: 100%;
-    font-weight: lighter;
-    font-size: 1.2em;
-    padding: .8em;
-    text-align: center;
-    color: white;
-    background-color: rgba(27, 27, 27, .3);
-}
 .evento {
     align-items: center;
     display: flex;
@@ -153,101 +144,29 @@ a {
     border: solid 1px #000;
 }
 .imgevento {
-    height: 300px;
-    width: 300px;
-<<<<<<< HEAD
-    background-image: url(../img/banner1.jpg);
-}
-/*mobile cadastro*/
-header {
-    width: 100%;
-    max-height: 160px;
-    background: #000;
-    height: 160px;
-    padding-top: 2em;
-}
-h1 {
-    color: white;
-    text-align: center;
-    font-weight: lighter;
-}
-.topmobile nav {
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-}
-.topmobile a {
-    color: white;
-    padding: .5em 1em;
-}
-.topmobile li {
-    color: white;
-    padding: .5em 0em;
-}
-.topmobile ul {
-    display: flex;
-    margin: 0 auto;
-}
-a {
-    text-decoration: none;
-}
-.banner2{
-    width: 100px;
-    height: 100px;
-}
-.botao{
-    color: white;
-    text-decoration: none;
-    padding: 15px 12px;
-    width: 15em;
-   display: flex;
-   justify-content: center;
-    height: 50px;
-    border-radius: 20px;
-    border: black;
-    box-shadow: 0px 6px 10px black;
-}
-.cadastroadm{
-    margin-top: 11em;
-    display: flex;
-    width: 23em;
-    margin: 10em 20px;
-}
-.cadastroadm h2{
-    font-size: 20px;
-    text-align: center;
-    background-color:white;
-    color: black;
-    width: 700px;
-    margin: -42px auto;
-}
-.form_adm{
-    height: 400gipx;
-    margin: 0 10px;
-    background-color: #84ADFF;
-}
-.form_adm .campo{
-    display: flex;
-    justify-content: center;
-}
-.esporte{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.data{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.campo{
-    display: flex;
-    margin: 20px 10px;
-=======
+    height: 270px;
+    width: 350px;
     background-image: url(../img/banner2.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.imgevento h4, .imgevento p {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding: .8em 0em;
+    text-align: center;
+    color: white;
+    background-color: rgba(27, 27, 27, .6);
+}
+.imgevento p {
+    width: 95.1%;
+    font-size: .9em;
+    padding: 1em;
 }
 .forms {
     display: flex;
@@ -264,27 +183,33 @@ a {
     padding: .2em;
 }
 .forms button {
+    margin-top: 2em;
     padding: .5em 2em;
     background-color: #fff;
     border: 1px solid #272727;
 }
+footer {
+    background-color: #157DEB;
+}
 .outra {
     height: 100%;
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
-    background-color: #157DEB;
     display: flex;
     justify-content: center;
     margin-top: 2em;
-    padding: 2em 0;
+}
+.outras {
+    margin-top: 2em;
 }
 .outras li {
     padding: .5em 0;
+    display: flex;
 }
-.outras li a, .outras h4 {
+.outras ul li a, .outras h4 {
     color: white;
     font-size: .9em;
-    padding: .5em;
+    padding: .5em 2em;
 }
 .outras h4 {
     color: #000;
@@ -302,8 +227,112 @@ a {
     padding: 1em 0;
 }
 footer p {
+    box-shadow: 0 0 5px #000;
     padding: .5em;
     text-align: center;
     background: linear-gradient(#3D01FF, #157DEB);
->>>>>>> a6b30db3edb56e4cdc2e9b331846846d4437455e
+}
+.block {
+   display: none;
+}
+.banner p {
+    display: none;
+}
+@media screen and (min-width:769px){
+    .block {
+        display: none;
+    }
+    .topmobile {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .topmobile nav {
+        flex-direction: row;
+    }
+    header {
+        height: 100px;
+        padding: 0;
+    }
+    .banner, .banner2, .banner3 {
+        height: 210px;
+    }
+    .descritivo {
+        width: 60%;
+    }
+    .row {
+        display: flex;
+    }
+    .infoevento {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        height: 100%;
+    }
+    .imgevento {
+        margin-right: 2em;
+    }
+    .outra {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:1201px){
+    .block {
+        display: flex;
+    }
+    .container {
+        max-width: 1200px;
+    }
+    .banner h3 {
+        display: none;
+    }
+    .banner p {
+        display: block;
+        font-weight: bold;
+        background-color: rgba(27, 27, 27, .3);
+        padding: 1em 2em;
+    }
+    .banner a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #157DEB;
+        width: 170px;
+        height: 50px;
+        color: white;
+        font-size: 1.1em;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+        margin-top: 3em;
+    }
+    .banner {
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner p {
+        font-size: 2em;
+        width: 750px;
+    }
+    .descritivo {
+        flex-direction: column;
+    }
+    .descritivo h3 {
+        padding: 1em 0;
+    }
+    .infoevento li {
+        padding: .8em 0;
+    }
+    .imgevento {
+        width: 600px;
+        height: 350px;
+    }
+    .imgevento h4 {
+        border-bottom: 1px solid white;
+    }
+    .outra {
+        justify-content: space-between;
+    }
 }
