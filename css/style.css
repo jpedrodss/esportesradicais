@@ -177,14 +177,14 @@ a {
     align-items: center;
     text-align: center;
 }
-.forms input {
+.forms .campo {
     margin: .2em auto;
 }
-.forms input, textarea {
+.forms .campo, textarea {
     width: 300px;
     padding: .2em;
 }
-.forms button {
+.button {
     margin-top: 2em;
     padding: .5em 2em;
     background-color: #fff;
@@ -239,6 +239,189 @@ footer p {
 }
 .banner p {
     display: none;
+}
+.bannersurf{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    background-image: url(../img/cadastroevento-mobile.png);
+    background-position: center;
+}
+.botao{
+    color: black;
+    text-decoration: none;
+    padding: 15px 12px;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 0px 6px 10px black;
+}
+.cadastroadm h2{
+    max-width: 400px;
+    margin: 4em auto;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 0px 6px 10px black;
+}
+select{    
+    border-radius: 10px;
+    background-color: white;
+    color: gray;
+}
+label{
+    display: flex;
+    justify-content: center;
+}
+.form_adm{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    padding: 25px;
+    align-items: center;
+    margin: auto;
+    background-color: #84ADFF;
+}
+::placeholder{
+    padding: 10px;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    height: 30px;
+    width: 250px;
+    margin: 8px;
+    border-radius: 10px;
+    border-style: initial;
+}
+input [type="date"]{
+    text-align: center;
+}
+::selection{
+    border-radius: 10px;
+    height: 30px;
+}
+
+.form_adm .escrito{
+    display: flex;
+    justify-content: center;
+}
+label{
+    display: flex;
+    margin: auto;
+}
+.esporte{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    position: relative;
+    left:90px;
+    padding: 0 10px;
+}
+.data{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: unset;
+}
+.escrita{
+    display: flex;
+    padding: 5px;
+}
+button{
+    display: flex;
+    position: relative;
+    top: 100px;
+    right: 135px;
+}
+.botao_cadastro{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 15px 12px;
+    margin: auto;
+    width: 15em;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 10px gray;
+}
+.form_event{
+    margin: 50px;
+    width: 327px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    padding: 25px;
+    align-items: center;
+    margin: auto;
+    background-color: #84ADFF;
+
+}
+.digitado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+.evento .botao_cadastro{
+    margin: auto;
+    position: relative;
+    top: -15px;
+    right: 10px;
+}
+label{
+    color: black  gray;
+    position: relative;
+    right: 80px;
+    font-size: 15px;
+}
+.botao_evento{
+    color: black;
+    text-decoration: none;
+    padding: 15px 12px;
+    width: 15em;
+    margin: 25px 0;
+    text-align: center;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 0px 6px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    z-index: 99;
+}
+@media screen and (min-width: 769px){
+    .form_adm{
+        min-width: 600px;
+        margin-top: auto;
+    }
+    .form_event{
+        min-width: 600px;
+        margin-top: auto;
+    }
+    .botao_evento {
+        position: relative;
+        left: 200px;
+    }
+    .botao{
+        position: relative;
+        left: 200px;
+    }
 }
 @media screen and (min-width:769px){
     header{
