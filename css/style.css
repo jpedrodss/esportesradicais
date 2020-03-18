@@ -335,6 +335,12 @@ input [type="date"]{
 .data input{
     background-color: white;
 }
+input[type="date"]{
+    text-align: center;
+}
+input{
+    width: 300px;
+}
 ::placeholder{
     color: black;
     padding: 10px;
@@ -370,6 +376,108 @@ select{
     top: -50px;
     font-size: 20px;
     color: white;
-    background-color: #84ADFF ;
+    background-color: rgba(27, 27, 27, 0.3) ;
     width: 200px;
+}
+.form_event{
+    margin: 50px;
+    width: 327px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    padding: 25px;
+    align-items: center;
+    margin: auto;
+    background-color: #84ADFF;
+
+}
+.digitado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+.evento .botao_cadastro{
+    margin: auto;
+    position: relative;
+    top: -15px;
+    right: 10px;
+}
+label{
+    color: black  gray;
+    position: relative;
+    right: 10px;
+    font-size: 15px;
+}
+.botao_evento{
+    color: black;
+    text-decoration: none;
+    padding: 15px 12px;
+    width: 15em;
+    margin: 25px;
+    left: 30px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: whitegit ;
+    border: black;
+    box-shadow: 0px 6px 10px black;
+}
+.outra {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #157DEB;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding: 2em 0;
+}
+.outras li {
+    padding: .5em 0;
+}
+.outras li a, .outras h4 {
+    color: white;
+    font-size: .9em;
+    padding: .5em;
+}
+.outras h4 {
+    color: #000;
+}
+.sociais img {
+    width: 50px;
+    padding: 0 1em;
+}
+.sociais {
+    background-color: #157DEB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+footer p {
+    padding: .5em;
+    text-align: center;
+    background: linear-gradient(#3D01FF, #157DEB);
+}
+/*versão em tablet*/
+@media screen and (min-width: 769px){
+    .form_adm{
+        min-width: 600px;
+        margin-top: auto;
+    }
+    .form_event{
+        min-width: 600px;
+        margin-top: auto;
+    }
+    .botao_evento {
+        position: relative;
+        left: 200px;
+    }
+    .botao{
+        position: relative;
+        left: 200px;
+    }
 }

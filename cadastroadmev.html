@@ -98,41 +98,67 @@
             <div class="cadastroadm">
                 <h2 class="botao">Cadastro de Eventos</h2>
             </div>
-            <section>
             <div class="container">
-                <div>
-                    <form class="form_adm" action="" method="post">
-                        <!--Formulario eventos-->
-                        <div class="escrita">
-                            <label for="nome"></label>
-                            <input type="text" name="nomecompletodousuario" id="nome" placeholder="Nome do evento">
+                <section class="evento">
+
+                    <!--formulário de cadastro de eventos-->
+                    <form class="form_event" action="" method="post">
+                        <div class="digitado">
+                            <label for="nomeevento"></label>
+                            <input type="text" name="nomeevento" id="nomeevento" placeholder="Nome do Evento">
                         </div>
-                        <div class="escrita">
-                            <div class="eventoesporte">
-                                <label for="eventoesporte">Qual esporte será o foco:</label>
-                                <select name="eventoesporte" id="eventoesporte">
-                                    <option value="Selecione Aqui">Selecione Aqui</option>
-                                    <option value="Skete">Skate</option>
-                                    <option value="Basquete">Basquete</option>
-                                    <option value="Natação">Natação</option>
-                                    <option value="Bumbjump">Bumbjump</option>
-                                    <option value="partkour">Parkour</option>
-                            </div>
+                        <div class="digitado">
+                            <label for="esportepraticado"></label>
+                            <input type="text" name="esportepraticado" id="esportepraticado"
+                                placeholder="Esporte que será praticado no evento:">
                         </div>
-                        <div class="escrita">
+                        <div class="digitado">
                             <div class="nivel">
-                                <label for="nivel">Nível do Campeonato</label>
+                                <label for="niveldificuldade"></label>
+                                <select name="nivel" id="nivel">
+                                    <option value="titulo">Selecione o nivel de dificuldade</option>
+                                    <option value="facil">Fácil</option>
+                                    <option value="medio">Médio</option>
+                                    <option value="dificil">Difícil</option>
+                                </select>
                             </div>
-                        </div>
-                            </select>
-                            <div>
-                                <button type=submit class="botao">
-                                    <h3>Cadastre-se</h3>
-                                </button>
+                            <div class="digitado">
+                                <div class="idade">
+                                    <label for="idade"></label>
+                                    <select name="idade" id="idade">
+                                        <option value="titulo">Selecione a faixa etária</option>
+                                        <option value="L">Livre</option>
+                                        <option value="+10">+10</option>
+                                        <option value="+12">+12</option>
+                                        <option value="+14">+14</option>
+                                        <option value="+16">+16</option>
+                                        <option value="+18">+18</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
+                            <div class="digitado">
+                                <label for="convidados"></label>
+                                <input type="text" name="convidados" id="convidados"
+                                    placeholder="Digite o nome dos convidados especiais:">
+                            </div>
+                            <div class="digitado">
+                                <label for="local"></label>
+                                <input type="text" name="local" id="local"
+                                    placeholder="Digite a localização do evento:">
+                            </div>
+                            <div class="digitado">
+                                <div class="data">
+                                    <label for="data">Data do evento:</label>
+                                    <input type="date" name="data" id="data" placeholder="Selecione a data do evento">
+                                </div>
+                            </div>
                     </form>
-        </section>
+                    <button class="botao_evento" type="submit">
+                        <h3>Cadastre-se</h3>
+                    </button>
+                </section>
+            </div>
+    </main>
 
 
     </main>
