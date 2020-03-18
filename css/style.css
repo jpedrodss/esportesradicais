@@ -4,6 +4,7 @@
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*index*/
 .container {
     max-width: 1200px;
     width: 90%;
@@ -42,7 +43,7 @@ h1 {
 a {
     text-decoration: none;
 }
-.banner, .banner2, .banner3 {
+.banner, .banner21, .banner3 {
     background-image: url(../img/banner1.jpg);
     background-position: center;
     background-size: cover;
@@ -53,7 +54,7 @@ a {
     align-items: center;
     justify-content: center;
 }
-.banner2 {
+.banner21 {
     background-image: url(../img/banner2.jpg);
     margin: 1.5em 0;
 }
@@ -155,118 +156,7 @@ a {
 .imgevento {
     height: 300px;
     width: 300px;
-<<<<<<< HEAD
     background-image: url(../img/banner1.jpg);
-}
-/*mobile cadastro*/
-header {
-    width: 100%;
-    max-height: 160px;
-    background: #000;
-    height: 160px;
-    padding-top: 2em;
-}
-h1 {
-    color: white;
-    text-align: center;
-    font-weight: lighter;
-}
-.topmobile nav {
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-}
-.topmobile a {
-    color: white;
-    padding: .5em 1em;
-}
-.topmobile li {
-    color: white;
-    padding: .5em 0em;
-}
-.topmobile ul {
-    display: flex;
-    margin: 0 auto;
-}
-a {
-    text-decoration: none;
-}
-.banner2{
-    width: 100px;
-    height: 100px;
-}
-.botao{
-    color: white;
-    text-decoration: none;
-    padding: 15px 12px;
-    width: 15em;
-   display: flex;
-   justify-content: center;
-    height: 50px;
-    border-radius: 20px;
-    border: black;
-    box-shadow: 0px 6px 10px black;
-}
-.cadastroadm{
-    margin-top: 11em;
-    display: flex;
-    width: 23em;
-    margin: 10em 20px;
-}
-.cadastroadm h2{
-    font-size: 20px;
-    text-align: center;
-    background-color:white;
-    color: black;
-    width: 700px;
-    margin: -42px auto;
-}
-.form_adm{
-    height: 400gipx;
-    margin: 0 10px;
-    background-color: #84ADFF;
-}
-.form_adm .campo{
-    display: flex;
-    justify-content: center;
-}
-.esporte{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.data{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.campo{
-    display: flex;
-    margin: 20px 10px;
-=======
-    background-image: url(../img/banner2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.forms {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.forms input {
-    margin: .2em auto;
-}
-.forms input, textarea {
-    width: 300px;
-    padding: .2em;
-}
-.forms button {
-    padding: .5em 2em;
-    background-color: #fff;
-    border: 1px solid #272727;
 }
 .outra {
     height: 100%;
@@ -305,5 +195,181 @@ footer p {
     padding: .5em;
     text-align: center;
     background: linear-gradient(#3D01FF, #157DEB);
->>>>>>> a6b30db3edb56e4cdc2e9b331846846d4437455e
+}
+.forms input {
+    margin: .2em auto;
+}
+.forms input, textarea {
+    width: 300px;
+    padding: .2em;
+    
+}
+.forms button {
+    padding: .5em 2em;
+    background-color: #fff;
+    border: 1px solid #272727;
+}
+
+/*fim da index*/
+/*mobile cadastro*/
+header {
+    width: 100%;
+    max-height: 160px;
+    background: #000;
+    height: 160px;
+    padding-top: 2em;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+.topmobile nav {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.topmobile a {
+    color: white;
+    padding: .5em 1em;
+}
+.topmobile li {
+    color: white;
+    padding: .5em 0em;
+}
+.topmobile ul {
+    display: flex;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.bannersurfgi{
+    width: 100px;
+    height: 100px;
+}
+main{
+    width: 100%;
+}
+.botao{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 15px 12px;
+    margin: 2em 2px;
+    width: 15em;
+   display: flex;
+   justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5)
+}
+.cadastroadm{
+    margin-top: 11em;
+    display: flex;
+    width: 23em;
+    margin: 10em 20px;
+}
+.cadastroadm h2{
+    font-size: 20px;
+    text-align: center;
+    background-color:white;
+    color: black;
+    width: 700px;
+    margin: -57px auto;
+}
+.form_adm{
+    height:500px;
+    margin: 32px 10px;
+    padding: 30px;
+    background-color: #84ADFF;
+    margin: auto;
+}
+.form_adm .escrita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esporte{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.data{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.escrita{
+    display: flex;
+    margin: 20px 10px;
+ /* background-image: url(../img/banner2.jpg);*/
+    background-size: cover;
+    background-position: center;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ .nome{
+    padding: 40px 0;
+    margin: auto;
+}
+input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+}
+input [type="date"]{
+    text-align: center;
+
+}
+.data input{
+    background-color: white;
+}
+::placeholder{
+    color: black;
+    padding: 10px;
+}
+select{
+    border-radius: 10px;
+    background-color: white;
+    height: 35px;
+}
+.botao_cadastro{
+    color: white;
+    text-decoration: none;
+    padding: 15px 12px;
+    margin: 2em 2px;
+    width: 15em;
+    display: flex;
+   justify-content: center;
+    height:20px;
+    border-radius: 20px;
+    border: black;
+    box-shadow: 0px 13px 10px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:end ;
+}
+
+
+.bannerpratique{
+  margin: 40px 0;
+}
+.bannerpratique p{
+    position: relative;
+    left: 10px;
+    top: -50px;
+    font-size: 20px;
+    color: white;
+    background-color: #84ADFF ;
+    width: 200px;
 }
