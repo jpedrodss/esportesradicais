@@ -405,6 +405,71 @@ label{
 header {
     z-index: 99;
 }
+/* PÁGINA DE PLANOS */
+img {
+    width: 100%;
+}
+.bannerplanos {
+    background-image: url(../img/bannerplanos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.bannerplanos h2 {
+    padding: .6em 1.5em;
+    background-color: rgba(27, 27, 27, .5);
+}
+.planos {
+    width: 90%;
+    text-align: center;
+    margin: 2em auto;
+}
+.cardplano, .cardplanob {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.cardplanob {
+    color: #000;
+    background-color: #fff;
+}
+.cardplano div, .cardplanob div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgcardplano {
+    background-image: url(../img/cardplano.jpg);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.cardplano div p, .cardplanob div p {
+    padding: .4em 0;
+}
+.cardplano a, .cardplanob a {
+    width: 270px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #157DEB;
+    color: white;
+}
 @media screen and (min-width: 769px){
     .form_adm{
         min-width: 600px;
@@ -422,8 +487,42 @@ header {
         position: relative;
         left: 200px;
     }
-}
-@media screen and (min-width:769px){
+    .planos {
+        width: 100%;
+        height: 100%;
+        padding: 3em 0;
+        margin: 0;
+        background-color: black;
+        color: white;
+    }
+    .planos p {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .white {
+        display: flex;
+        background-color: white;
+        width: 100%;
+    }
+    .white p, .white h4 {
+        color: black;
+    }
+    .cardplano {
+        background-color: rgba(0, 0, 0, 0);
+        color: #000;
+    }
+    .black {
+        display: flex;
+        background-color: black;
+        width: 100%;
+    }
+    .black p, .black h4 {
+        color: white;
+    }
+    .cardplanob {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
     header{
         position: sticky;
         top: 0;
@@ -527,5 +626,54 @@ header {
     }
     .outra {
         justify-content: space-between;
+    }
+    .white, .black {
+        display: flex;
+        flex-direction: column;
+    }
+    .white {
+        background: none;
+    }
+    .black {
+        background: none;
+    }
+    .cardplano {
+        background-color: black;
+    }
+    .cardplanob {
+        background-color: white;
+    }
+    .cardplano p, .cardplano h4 {
+        color: white;
+        width: 50%;
+    }
+    .cardplanob p, .cardplanob h4 {
+        color: black;
+        width: 50%;
+    }
+    .cardplano h4, .cardplanob h4 {
+        font-size: 3em;
+    }
+    .cardplano p, .cardplanob p {
+        font-size: 1.1em;
+    }
+    .planos {
+        background: none;
+        color: black;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .imgcardplano {
+        width: 300px;
+        height: 300px;
+    }
+    .cardplano div, .cardplanob div  {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .cardplano .textplano, .cardplanob .textplano {
+        height: 100%;
+        width: 60%;
+        flex-direction: column;
     }
 }
