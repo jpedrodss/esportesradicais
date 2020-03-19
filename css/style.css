@@ -672,6 +672,10 @@ img {
         width: 60%;
         flex-direction: column;
     }
+    .bannersurf{
+        width: 1202px;
+        height: 200px;
+    }
     .form_adm{
         width: 200px;
     }
