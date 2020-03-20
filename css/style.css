@@ -461,6 +461,9 @@ img {
 .cardplano div p, .cardplanob div p {
     padding: .4em 0;
 }
+.black {
+    background-color: #000;
+}
 .cardplano a, .cardplanob a {
     width: 270px;
     height: 35px;
